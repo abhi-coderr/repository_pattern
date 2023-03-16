@@ -1,4 +1,4 @@
-package com.example.cleanarchitecturedemo.data
+package com.example.cleanarchitecturedemo.data.database.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
@@ -15,5 +15,5 @@ interface MovieDao {
     suspend fun deleteMovies()
 
     @Query("SELECT * FROM movie_db")
-    suspend fun getMoviesFromDB(movies: List<Movie>)
+    suspend fun getMovies(): List<Movie>
 }

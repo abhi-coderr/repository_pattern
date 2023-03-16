@@ -8,10 +8,10 @@ import dagger.hilt.EntryPoint
 
 data class ArtistList(
     @SerializedName("results")
-    val artists: List<Artist>,
+    val artists: List<Artist>
 )
 
-@Entity(tableName = "artist_db")
+@Entity(tableName = "popular_artist")
 data class Artist(
     @PrimaryKey
     @SerializedName("id")

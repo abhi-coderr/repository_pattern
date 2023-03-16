@@ -9,7 +9,7 @@ data class MovieList(
     val movies: List<Movie>
 )
 
-@Entity(tableName = "movie_db")
+@Entity("movie_db")
 data class Movie(
     @PrimaryKey
     @SerializedName("id")
