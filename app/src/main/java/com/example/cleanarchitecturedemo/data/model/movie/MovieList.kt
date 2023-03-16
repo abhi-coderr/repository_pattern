@@ -1,5 +1,7 @@
-package com.example.cleanarchitecturedemo.data.model
+package com.example.cleanarchitecturedemo.data.model.movie
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
 data class MovieList(
@@ -7,7 +9,9 @@ data class MovieList(
     val movies: List<Movie>
 )
 
+@Entity(tableName = "movie_db")
 data class Movie(
+    @PrimaryKey
     @SerializedName("id")
     val id: Int,
     @SerializedName("overview")
