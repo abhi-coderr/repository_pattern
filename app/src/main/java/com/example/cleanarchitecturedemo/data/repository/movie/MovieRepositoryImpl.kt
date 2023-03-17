@@ -24,7 +24,7 @@ class MovieRepositoryImpl(
         return newListOfMovie
     }
 
-    suspend fun getMoviesFromAPI(): List<Movie> {
+    private suspend fun getMoviesFromAPI(): List<Movie> {
 
         lateinit var movieList: List<Movie>
         try {
@@ -41,7 +41,7 @@ class MovieRepositoryImpl(
         return movieList
     }
 
-    suspend fun getMovieFromDB(): List<Movie> {
+    private suspend fun getMovieFromDB(): List<Movie> {
         lateinit var movieList: List<Movie>
 
         try {
@@ -60,7 +60,7 @@ class MovieRepositoryImpl(
         return movieList
     }
 
-    suspend fun getMovieFromCache(): List<Movie> {
+    private suspend fun getMovieFromCache(): List<Movie> {
         lateinit var movieList: List<Movie>
         try {
             movieList = movieCacheDataSource.getMovieFromCache()

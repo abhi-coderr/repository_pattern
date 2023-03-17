@@ -12,7 +12,16 @@
         android:theme="@style/Theme.CleanArchitectureDemo"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.ui.MainActivity"
+            android:name=".presentation.ui.TvShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.MovieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.ArtistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
