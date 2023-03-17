@@ -1,4 +1,4 @@
-package com.example.cleanarchitecturedemo.data.repository.artist
+package com.example.cleanarchitecturedemo.data.repository.artist.datasource
 
 import com.example.cleanarchitecturedemo.data.model.artist.Artist
 

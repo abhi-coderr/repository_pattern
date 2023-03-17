@@ -2,6 +2,9 @@ package com.example.cleanarchitecturedemo.data.repository.artist
 
 import android.util.Log
 import com.example.cleanarchitecturedemo.data.model.artist.Artist
+import com.example.cleanarchitecturedemo.data.repository.artist.datasource.ArtistCacheDataSource
+import com.example.cleanarchitecturedemo.data.repository.artist.datasource.ArtistLocalDataSource
+import com.example.cleanarchitecturedemo.data.repository.artist.datasource.ArtistRemoteDataSource
 import com.example.cleanarchitecturedemo.domain.repository.ArtistRepository
 
 class ArtistRepositoryImpl(

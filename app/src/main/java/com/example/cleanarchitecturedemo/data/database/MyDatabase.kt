@@ -10,7 +10,7 @@ import com.example.cleanarchitecturedemo.data.model.movie.Movie
 import com.example.cleanarchitecturedemo.data.model.tv.TvShow
 
 @Database(
-    [Movie::class, TvShow::class, Artist::class],
+    entities = [Movie::class, TvShow::class, Artist::class],
     version = 1,
     exportSchema = false
 )
